@@ -1,0 +1,226 @@
+/* App Container */
+.App {
+  text-align: center;
+}
+
+/* Header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+/* Link */
+.App-link {
+  color: #61dafb;
+}
+
+/* Pagination Container */
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination .active button {
+  background-color: #0056b3;
+}
+
+.pagination .disabled button {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid #ddd;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  border-radius: 10px; /* Rounded corners */
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif; /* Use a sans-serif font */
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #333333; /* Darker text color */
+}
+
+td {
+  background-color: #ffffff; /* White background for table cells */
+  color: #666666; /* Medium gray text color */
+}
+
+/* Add hover effect on table rows */
+tr:hover {
+  background-color: #f9f9f9; /* Light gray background on hover */
+}
+
+/* Hide Date and Time Headers */
+th:nth-child(7),
+th:nth-child(8) {
+  display: none;
+}
+
+/* Created At Column */
+td:nth-child(5) div {
+  display: flex;
+  justify-content: center;
+}
+
+td:nth-child(5) span {
+  margin: 0 5px;
+}
+
+.search-bar {
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  padding: 8px;
+  border: 2px solid #ccc; /* Add a border */
+  border-radius: 20px; /* Add rounded corners */
+  outline: none; /* Remove outline */
+  transition: border-color 0.3s ease; /* Add transition effect */
+}
+
+/* Add hover effect */
+.search-bar:hover {
+  border-color: #007bff; /* Change border color on hover */
+}
+
+/* Add focus effect */
+.search-bar:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+/* Dropdown Button Hover */
+.dropbtn:hover {
+  background-color: #2980b9;
+}
+
+/* Dropdown Content Button */
+.dropdown-content button {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Dropdown Content Button Hover */
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+/* Show Dropdown Content on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Styling for h1 */
+h1 {
+  font-size: 36px; /* Adjust font size */
+  font-weight: bold; /* Add bold font weight */
+  color: #007bff; /* Set text color */
+  text-align: center; /* Center align text */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Add letter spacing */
+  font-family: cursive;
+  margin-bottom: 20px; /* Add bottom margin */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add text shadow */
+  animation: fadeInUp 0.5s ease-in-out; /* Add fade-in animation */
+}
+
+/* Animation effect for h1 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
