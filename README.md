@@ -23,7 +23,7 @@ To get started with the project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/TurubatlaHemanth/Zithara_assignment.git
 2. change directory to where App.js is present
    ```bash
     cd my-app/src
